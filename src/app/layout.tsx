@@ -3,7 +3,6 @@ import { Archivo_Black, Space_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import ContactFooter from "@/components/ContactFooter";
-import CurveSwipe from "@/components/CurveSwipe";
 
 const archivoBlack = Archivo_Black({
   variable: "--font-archivo-black",
@@ -40,13 +39,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${archivoBlack.variable} ${spaceMono.variable} ${inter.variable} scroll-smooth`}
+      className={`${archivoBlack.variable} ${spaceMono.variable} ${inter.variable}`}
     >
       <body
-        className="relative min-h-screen overflow-x-hidden bg-orange text-black snap-y snap-mandatory overscroll-y-none"
+        className="relative min-h-screen overflow-x-hidden bg-orange text-black"
         style={{ background: "#FF4D00" }}
       >
-        <CurveSwipe />
         <Nav />
         {children}
         <ContactFooter />

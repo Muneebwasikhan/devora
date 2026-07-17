@@ -5,10 +5,7 @@ import { EASE_OUT } from "@/lib/motion";
 
 export default function Hero() {
   return (
-    <div
-      data-swipe-section
-      className="min-h-screen box-border flex flex-col justify-center px-5 sm:px-8 md:px-12 pt-[140px] snap-start snap-always"
-    >
+    <div className="min-h-[85vh] flex flex-col justify-center px-5 sm:px-8 md:px-12 pt-[140px]">
       <motion.div
         initial={{ opacity: 0, y: -16 }}
         animate={{ opacity: 1, y: 0 }}
@@ -49,34 +46,24 @@ export default function Hero() {
           London, UK
         </div>
         <div className="shrink-0">
-          <svg width="120" height="120" viewBox="0 0 144 144">
+          <svg width="120" height="120" viewBox="0 0 144 144" className="animate-spin-slow">
             <defs>
               <path
                 id="scrollCircle"
                 d="M 72,72 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"
               />
             </defs>
-            <g className="animate-spin-slow" style={{ transformOrigin: "72px 72px" }}>
-              <text
-                fontFamily="'Space Mono',monospace"
-                fontSize="9"
-                fontWeight={700}
-                letterSpacing="1"
-                fill="#000000"
-              >
-                <textPath href="#scrollCircle" startOffset="0%">
-                  SCROLL DOWN &#8226; SCROLL DOWN &#8226; SCROLL DOWN &#8226; SCROLL DOWN &#8226;
-                </textPath>
-              </text>
-            </g>
-            <path
-              d="M72 54 L72 90 M60 78 L72 90 L84 78"
-              stroke="#000000"
-              strokeWidth="3"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
+            <text
+              fontFamily="'Space Mono',monospace"
+              fontSize="9"
+              fontWeight={700}
+              letterSpacing="1"
+              fill="#000000"
+            >
+              <textPath href="#scrollCircle" startOffset="0%">
+                SCROLL DOWN &#8226; SCROLL DOWN &#8226; SCROLL DOWN &#8226; SCROLL DOWN &#8226;
+              </textPath>
+            </text>
           </svg>
         </div>
         <div className="font-mono-brand text-[13px] tracking-[-0.02em] uppercase text-right flex-1 min-w-[180px]">

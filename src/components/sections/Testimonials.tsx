@@ -26,11 +26,7 @@ const TESTIMONIALS = [
 
 export default function Testimonials() {
   return (
-    <div
-      id="testimonials"
-      data-swipe-section
-      className="bg-black text-white px-5 sm:px-8 md:px-12 py-24 min-h-screen box-border flex flex-col justify-center snap-start snap-always"
-    >
+    <div id="testimonials" className="bg-black text-white px-5 sm:px-8 md:px-12 py-24">
       <motion.h2
         variants={fadeUpBig}
         initial="hidden"

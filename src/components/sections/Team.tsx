@@ -5,11 +5,7 @@ import { fadeUp, fadeUpBig, fromLeft, fromRight, viewportOnce } from "@/lib/moti
 
 export default function Team() {
   return (
-    <div
-      id="team"
-      data-swipe-section
-      className="bg-black text-white px-5 sm:px-8 md:px-12 py-24 min-h-screen box-border flex flex-col justify-center snap-start snap-always"
-    >
+    <div id="team" className="bg-black text-white px-5 sm:px-8 md:px-12 py-24">
       <motion.h2
         variants={fadeUpBig}
         initial="hidden"
