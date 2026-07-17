@@ -21,7 +21,8 @@ export default function Services() {
   return (
     <motion.div
       id="services"
-      className="bg-black text-white px-5 sm:px-8 md:px-12 py-24"
+      data-swipe-section
+      className="bg-black text-white px-5 sm:px-8 md:px-12 py-24 min-h-screen box-border flex flex-col justify-center snap-start snap-always"
       variants={staggerContainer(0.12)}
       initial="hidden"
       whileInView="show"

@@ -28,7 +28,11 @@ const TAGS = [
 
 export default function AiWorkflow() {
   return (
-    <div id="ai-workflow" className="px-5 sm:px-8 md:px-12 py-24">
+    <div
+      id="ai-workflow"
+      data-swipe-section
+      className="px-5 sm:px-8 md:px-12 py-24 min-h-screen box-border flex flex-col justify-center snap-start snap-always"
+    >
       <motion.h2
         variants={fadeUpBig}
         initial="hidden"

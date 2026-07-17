@@ -22,7 +22,8 @@ export default function ContactFooter() {
     <>
       <div
         id="contact"
-        className="px-5 sm:px-8 md:px-12 pt-16 md:pt-[140px] pb-24 text-center"
+        data-swipe-section
+        className="px-5 sm:px-8 md:px-12 pt-16 md:pt-[140px] pb-24 text-center min-h-screen box-border flex flex-col justify-center snap-start snap-always"
       >
         <motion.h2
           initial={{ opacity: 0, scale: 0.7, rotate: -3 }}
