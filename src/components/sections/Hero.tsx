@@ -46,24 +46,34 @@ export default function Hero() {
           London, UK
         </div>
         <div className="shrink-0">
-          <svg width="120" height="120" viewBox="0 0 144 144" className="animate-spin-slow">
+          <svg width="120" height="120" viewBox="0 0 144 144">
             <defs>
               <path
                 id="scrollCircle"
                 d="M 72,72 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"
               />
             </defs>
-            <text
-              fontFamily="'Space Mono',monospace"
-              fontSize="9"
-              fontWeight={700}
-              letterSpacing="1"
-              fill="#000000"
-            >
-              <textPath href="#scrollCircle" startOffset="0%">
-                SCROLL DOWN &#8226; SCROLL DOWN &#8226; SCROLL DOWN &#8226; SCROLL DOWN &#8226;
-              </textPath>
-            </text>
+            <g className="animate-spin-slow" style={{ transformOrigin: "72px 72px" }}>
+              <text
+                fontFamily="'Space Mono',monospace"
+                fontSize="9"
+                fontWeight={700}
+                letterSpacing="1"
+                fill="#000000"
+              >
+                <textPath href="#scrollCircle" startOffset="0%">
+                  SCROLL DOWN &#8226; SCROLL DOWN &#8226; SCROLL DOWN &#8226; SCROLL DOWN &#8226;
+                </textPath>
+              </text>
+            </g>
+            <path
+              d="M72 54 L72 90 M60 78 L72 90 L84 78"
+              stroke="#000000"
+              strokeWidth="3"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </div>
         <div className="font-mono-brand text-[13px] tracking-[-0.02em] uppercase text-right flex-1 min-w-[180px]">
