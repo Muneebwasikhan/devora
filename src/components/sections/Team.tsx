@@ -5,7 +5,10 @@ import { fadeUp, fadeUpBig, fromLeft, fromRight, viewportOnce } from "@/lib/moti
 
 export default function Team() {
   return (
-    <div id="team" className="bg-black text-white px-5 sm:px-8 md:px-12 py-24">
+    <div
+      id="team"
+      className="bg-black text-white px-5 sm:px-8 md:px-12 py-24 min-h-screen box-border flex flex-col justify-center"
+    >
       <motion.h2
         variants={fadeUpBig}
         initial="hidden"
@@ -34,7 +37,7 @@ export default function Team() {
           whileInView="show"
           viewport={viewportOnce}
           whileHover={{ backgroundColor: "#0a0a0a" }}
-          className="flex-1 basis-[300px] bg-black px-6 sm:px-8 py-10"
+          className="flex-1 basis-[300px] bg-black px-8 py-10"
         >
           <div className="font-mono-brand text-xs font-bold tracking-[-0.02em] uppercase mb-3.5 text-orange">
             Direct
@@ -53,7 +56,7 @@ export default function Team() {
           whileInView="show"
           viewport={viewportOnce}
           whileHover={{ backgroundColor: "#0a0a0a" }}
-          className="flex-1 basis-[300px] bg-black px-6 sm:px-8 py-10"
+          className="flex-1 basis-[300px] bg-black px-8 py-10"
         >
           <div className="font-mono-brand text-xs font-bold tracking-[-0.02em] uppercase mb-3.5 text-orange">
             Managed

@@ -22,7 +22,7 @@ export default function ContactFooter() {
     <>
       <div
         id="contact"
-        className="px-5 sm:px-8 md:px-12 pt-16 md:pt-[140px] pb-24 text-center"
+        className="px-5 sm:px-8 md:px-12 pt-[clamp(64px,10vw,140px)] pb-24 text-center min-h-screen box-border flex flex-col justify-center items-center"
       >
         <motion.h2
           initial={{ opacity: 0, scale: 0.7, rotate: -3 }}
@@ -41,7 +41,7 @@ export default function ContactFooter() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300, damping: 15 }}
-          className="inline-block font-mono-brand text-[15px] font-bold uppercase tracking-[-0.02em] text-white bg-black px-11 py-[22px] rounded-full no-underline"
+          className="inline-flex items-center justify-center font-mono-brand text-[15px] font-bold uppercase tracking-[-0.02em] text-white bg-black px-11 py-[22px] rounded-full no-underline"
         >
           Email us
         </motion.a>

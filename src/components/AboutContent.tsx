@@ -48,7 +48,7 @@ const STEPS = [
 export default function AboutContent() {
   return (
     <div data-screen-label="About">
-      <div className="px-5 sm:px-8 md:px-12 pt-[140px] pb-24">
+      <div className="px-5 sm:px-8 md:px-12 pt-[140px] pb-24 min-h-screen box-border flex flex-col justify-center">
         <motion.h1
           initial={{ opacity: 0, y: 100, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -70,7 +70,7 @@ export default function AboutContent() {
         </motion.p>
       </div>
 
-      <div className="px-5 sm:px-8 md:px-12 py-24">
+      <div className="px-5 sm:px-8 md:px-12 py-24 min-h-screen box-border flex flex-col justify-center">
         <motion.h2
           variants={fadeUpBig}
           initial="hidden"
@@ -101,7 +101,7 @@ export default function AboutContent() {
         </motion.div>
       </div>
 
-      <div className="bg-black text-white px-5 sm:px-8 md:px-12 py-24">
+      <div className="bg-black text-white px-5 sm:px-8 md:px-12 py-24 min-h-screen box-border flex flex-col justify-center">
         <motion.h2
           variants={fadeUpBig}
           initial="hidden"

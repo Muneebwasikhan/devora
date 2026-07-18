@@ -16,7 +16,10 @@ const CARDS = [
 
 export default function WhyUs() {
   return (
-    <div id="why-us" className="px-5 sm:px-8 md:px-12 py-24">
+    <div
+      id="why-us"
+      className="px-5 sm:px-8 md:px-12 py-24 min-h-screen box-border flex flex-col justify-center"
+    >
       <motion.h2
         variants={fadeUpBig}
         initial="hidden"
